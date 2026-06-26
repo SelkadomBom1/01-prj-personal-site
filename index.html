@@ -2,10 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <script src="https://kit.fontawesome.com/7e7e367c33.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Header with navigation -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo title-star">Edwin's Portfolio</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero/About section -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-photo">
+        <img src="img/JobPhoto1.png" alt="Profile picture">
+      </div>
+      <div class="about-content">
+        <h2 class="title-star">About Me</h2>
+        <p>Hello! My name is Edwin Ouyang, I am a 3rd year at UC Davis currently majoring in Cinema and Digital Media. My specialization involves design and video game development. I have worked on various games by utilizing software engines or tools such as Unity, JavaScript, etc. throughout my college career. I also have strong experience in doing art both digitally and physically.</p>
+        <p>This portfolio showcases the projects I'm creating. My goal is to clean, user-friendly web experiences and continually improving my coding abilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="title-star">Skills</h2>
+      <div class="skills-list">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5" style="color: rgb(30, 105, 164); font-size: 60px; margin-bottom: 0.5rem;"></i>
+          <h3 style="font-size: 1.5rem;">HTML</h3>
+          <p style="font-size: 1rem;">Building semantic and structured web pages</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-square-js" style="color: rgb(30, 105, 164); font-size: 60px; margin-bottom: 0.5rem;"></i>
+          <h3 class="js-title" style="font-size: 1.5rem;">JavaScript</h3>
+          <p style="font-size: 1rem;">Adding interactivity and dynamic features</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/davinci-resolvelogo_blue.png" alt="DaVinci Resolve" style="width: 60px; height: 60px; margin-bottom: 0.5rem;">
+          <h3 style="font-size: 1.5rem;">DaVinci Resolve</h3>
+          <p style="font-size: 1rem;">Professional video editing and color grading</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/vcvrackicon.png" alt="VCV Rack" style="width: 60px; height: 60px; margin-bottom: 0.5rem;">
+          <h3 style="font-size: 1.5rem;">VCV Rack</h3>
+          <p style="font-size: 1rem;">Creating modular synthesizer patches and audio plugins</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-unity" style="color: rgb(30, 105, 164); font-size: 60px; margin-bottom: 0.5rem;"></i>
+          <h3 style="font-size: 1.5rem;">Unity</h3>
+          <p style="font-size: 1rem;">Creating interactive 3D game experiences</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="title-star">Projects</h2>
+      <div class="projects-list">
+        <div class="project-card">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-brands fa-itch-io" style="color: rgb(30, 105, 164);"></i>
+            My Itch.io Page
+          </h3>
+          <p>This game page portfolio site showcasing my work as a video game developer. There are multipe genres including Visual Novels, RPGs, and more!Please try my games out!</p>
+          <a href="https://selkadombom1.itch.io/" class="btn" target="_blank" rel="noopener noreferrer">View on itch.io</a>
+        </div>
+        <div class="project-card">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-sitemap" style="color: rgb(30, 105, 164);"></i>
+            My Other Portfolio Site
+          </h3>
+          <p>This is another website portfolio I made, using Google Site. It includes my resume and other projects. It also features a blog I wrote on portfolio-building for my major.</p>
+          <a href="https://sites.google.com/ucdavis.edu/edwin-ouyangblog/home" class="btn" target="_blank" rel="noopener noreferrer">View Portfolio Site</a>
+        </div>
+        <div class="project-card">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-brands fa-bandcamp" style="color: rgb(30, 105, 164);"></i>
+            My Bandcamp
+          </h3>
+          <p>My music portfolio site showcasing my original compositions and recordings. All music is produced through Euorack modules from VCV Rack 2. Mixing and mastering done in Reaper.</p>
+          <a href="https://edwino.bandcamp.com/album/sleepless-nights" class="btn" target="_blank" rel="noopener noreferrer">View Bandcamp</a>
+        </div>
+        <div class="project-card">
+          <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-brands fa-youtube" style="color: rgb(30, 105, 164);"></i>
+            YouTube Channel
+          </h3>
+          <p>This page will direct to my YouTube channel. I post videos about game development, music production, and other interests. Please check out my videos!</p>
+          <a href="https://www.youtube.com/@EdwinOuyangUCD" class="btn" target="_blank" rel="noopener noreferrer">View YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="title-star">Get In Touch</h2>
+      <p>I'd love to hear from you! Feel free to reach out with any questions or opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/edwinou12/" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/SelkadomBom1" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
